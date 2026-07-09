@@ -58,6 +58,14 @@ La IA en la empresa no puede ser una "caja negra" sin supervisión. UCI implemen
 
 El reto principal fue la Orquestación de la Cadena de Pensamiento (LangGraph). Lograr que un "Agente Maestro" descomponga una orden compleja (ej: "Investiga el precio de la competencia en la web, compáralo con nuestra base de datos SQL y envíame un informe detallado por correo") en sub-tareas precisas, las delegue a los agentes correctos en el orden lógico, y valide la calidad del resultado antes de entregarlo, representó el mayor hito de ingeniería cognitiva del proyecto.
 
-![PROTOTIPO](./imagenes/1_Prototipo_General.png)
+## Microservicios
+![MICROSERVICIOS](./imagenes/2_Microservicios.png)
 
-![PROTOTIPO](./imagenes/2_Microservicios.png)
+## Dockers
+![DOCKER](./imagenes/3_Docker.png)
+
+## Arquitectura
+![ARQUITECTURA](./imagenes/4_Arquitectura.png)
+
+## Prototipo de Interfaz 1
+![PROTOTIPO](./imagenes/1_Prototipo_General.png)
