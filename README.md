@@ -67,5 +67,13 @@ El reto principal fue la Orquestación de la Cadena de Pensamiento (LangGraph). 
 ## Arquitectura
 ![ARQUITECTURA](./imagenes/4_Arquitectura.png)
 
-## Prototipo de Interfaz 1
+## Interfaz General
 ![PROTOTIPO](./imagenes/1_Prototipo_General.png)
+
+## Agente RAG Documental
+![PROTOTIPO](./imagenes/5_RAG_Documental.png)
+
+## Agente Python Analytics (CSV/Excel)
+![PROTOTIPO](./imagenes/6_Agente_Python_Analytics.png)
+
+
