@@ -79,6 +79,10 @@ El reto principal fue la Orquestación de la Cadena de Pensamiento (LangGraph). 
 ## Agente Python Analytics SQL
 ![PROTOTIPO4](./imagenes/7_Agente_Python_Analytics_SQL.png)
 
-## Agente SQL Specialist
+## Agente SQL Specialist (DB)
 ![PROTOTIPO5](./imagenes/8_Agente_SQL_Specialist_DB.png)
+
+## Agente de Investigación
+![PROTOTIPO6](./imagenes/9_Agente_Investigacion.png)
+![PROTOTIPO6](./imagenes/9_Agente_Investigacion1.png)
 
