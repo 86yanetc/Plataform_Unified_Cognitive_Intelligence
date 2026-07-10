@@ -93,3 +93,10 @@ El reto principal fue la Orquestación de la Cadena de Pensamiento (LangGraph). 
 
 ![Agente_Vision1](./imagenes/11b_Agente_Vision.png)
 
+## Agente Director
+
+![Agente_Director](./imagenes/12_Agente_Director.png)
+
+## Recepción de Correo 
+
+![Recepcion_Correo](./imagenes/13_Recepcion_Correo.png)
