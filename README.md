@@ -18,7 +18,7 @@ Para conocer los detalles de arquitectura, desafíos técnicos superados y compa
 
 La Plataforma UCI no es una aplicación, es una infraestructura cognitiva de grado industrial. Ha sido diseñada para transformar la interacción humana con la tecnología mediante una red de microservicios y agentes especializados que colaboran bajo una jerarquía de mando. UCI resuelve los cuatro grandes retos de la IA en la empresa: Escalabilidad, Seguridad, Costo y Confiabilidad.
 
-## 💡 Decisiones de Ingeniería y Preguntas Clave
+## 💡 Decisiones de Ingeniería y Preguntas Claves
 
 En la construcción de la Plataforma UCI, se aplicaron principios de ingeniería de software robustos para transformar algoritmos de IA en una infraestructura operativa de grado empresarial. Estas son las respuestas a los pilares de la plataforma:
 
@@ -49,6 +49,8 @@ La IA en la empresa no puede ser una "caja negra" sin supervisión. UCI implemen
 **Cloudflare Tunneling:** Se eliminó la exposición de puertos vulnerables, creando un túnel cifrado de capa 7 para el acceso global seguro.
 
 **Human-in-the-Loop (HITL):** Para acciones críticas (como el despacho de correos electrónicos), el sistema requiere una firma de autorización humana, mitigando riesgos reputacionales o de seguridad.
+
+**Audit Logging (Trazabilidad Total):** UCI registra cada "pensamiento", decisión y ejecución en archivos app.log. Esta trazabilidad técnica permite auditar el comportamiento de los agentes en tiempo real, facilitando la detección de anomalías, el cumplimiento normativo (Compliance) y la depuración profunda de la cadena de razonamiento.
 
 **¿Cuál fue el desafío técnico más complejo?**
 
