@@ -22,7 +22,7 @@ La Plataforma UCI no es una aplicación, es una infraestructura cognitiva de gra
 
 En la construcción de la Plataforma UCI, se aplicaron principios de ingeniería de software robustos para transformar algoritmos de IA en una infraestructura operativa de grado empresarial. Estas son las respuestas a los pilares de la plataforma:
 
-**¿Por qué una Arquitectura de Microservicios Distribuidos en lugar de una Monolítica?**
+**1.¿Por qué una Arquitectura de Microservicios Distribuidos en lugar de una Monolítica?**
 
 Ejecutar 8 agentes especializados junto con modelos multimodales y procesos de búsqueda vectorial requiere una gestión de recursos crítica:
 
@@ -30,7 +30,7 @@ Ejecutar 8 agentes especializados junto con modelos multimodales y procesos de b
 
 **Procesamiento Asíncrono (Celery + Redis):** Se delegaron las tareas pesadas (como el análisis de PDFs de cientos de páginas o el envío de correos masivos) a Workers independientes. Esto garantiza que la interfaz de usuario nunca se bloquee, manteniendo una latencia de respuesta óptima.
 
-**¿Cómo se optimizó el retorno de inversión (FinOps) y la latencia?**
+**2.¿Cómo se optimizó el retorno de inversión (FinOps) y la latencia?**
 
 El costo de los tokens y el tiempo de respuesta son los mayores obstáculos para la IA empresarial. La solución fue una Caché Híbrida Multinivel:
 
@@ -40,7 +40,7 @@ El costo de los tokens y el tiempo de respuesta son los mayores obstáculos para
 
 **Elastic Inference:** Implementación de una lógica de fallback que conmuta automáticamente entre modelos de alto rendimiento (70B) y modelos ligeros (8B) según la complejidad de la tarea.
 
-**¿Cómo se garantiza la Seguridad y Gobernanza en un entorno corporativo?**
+**3.¿Cómo se garantiza la Seguridad y Gobernanza en un entorno corporativo?**
 
 La IA en la empresa no puede ser una "caja negra" sin supervisión. UCI implementa:
 
@@ -52,7 +52,7 @@ La IA en la empresa no puede ser una "caja negra" sin supervisión. UCI implemen
 
 **Audit Logging (Trazabilidad Total):** UCI registra cada "pensamiento", decisión y ejecución en archivos app.log. Esta trazabilidad técnica permite auditar el comportamiento de los agentes en tiempo real, facilitando la detección de anomalías, el cumplimiento normativo (Compliance) y la depuración profunda de la cadena de razonamiento.
 
-**¿Cuál fue el desafío técnico más complejo?**
+**4.¿Cuál fue el desafío técnico más complejo?**
 
 El reto principal fue la Orquestación de la Cadena de Pensamiento (LangGraph). Lograr que un "Agente Maestro" descomponga una orden compleja (ej: "Investiga el precio de la competencia en la web, compáralo con nuestra base de datos SQL y envíame un informe detallado por correo") en sub-tareas precisas, las delegue a los agentes correctos en el orden lógico, y valide la calidad del resultado antes de entregarlo, representó el mayor hito de ingeniería cognitiva del proyecto.
 
