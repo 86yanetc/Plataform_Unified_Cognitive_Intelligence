@@ -61,7 +61,7 @@ El reto principal fue la Orquestación de la Cadena de Pensamiento (LangGraph). 
 He diseñado y desarrollado una infraestructura de Microservicios de Inteligencia Artificial de grado industrial, capaz de unificar el análisis de datos estructurados (SQL), la recuperación de conocimiento documental (RAG) y la investigación autonóma en tiempo real. La plataforma está cimentada bajo estándares rigurosos de MLOps y FinOps, garantizando un ecosistema escalable, seguro y económicamente sostenible.
 A continuación, se detalla el desglose de la arquitectura organizado por sus seis capas de valor:
 
-**1. 🧠 Capa de Inteligencia: Fuerza Laboral Agéntica**
+### 1. 🧠 Capa de Inteligencia: Fuerza Laboral Agéntica
 
 UCI despliega un equipo de 8 especialistas orquestados para colaborar entre sí, superando la limitación de los chatbots convencionales:
 
@@ -81,19 +81,20 @@ UCI despliega un equipo de 8 especialistas orquestados para colaborar entre sí,
 
 **📩 Email Dispatcher:** Automatiza la comunicación ejecutiva generando informes en HTML con gráficos adjuntos vía SMTP.
 
-**2. 🏗️ Capa de Orquestación y Memoria: El Cerebro Maestro**
+
+### 2. 🏗️ Capa de Orquestación y Memoria: El Cerebro Maestro
 
 El control central asegura la coherencia y eficiencia de la plataforma:
 
-    **Agente Maestro (Director):** Un orquestador basado en LangGraph que descompone objetivos complejos en sub-tareas delegadas secuencialmente.
+**Agente Maestro (Director):** Un orquestador basado en LangGraph que descompone objetivos complejos en sub-tareas delegadas secuencialmente.
 
-    **Caché Híbrida Multinivel:**
+**Caché Híbrida Multinivel:**
 
-      **o L1 (Redis):** Respuesta instantánea para consultas idénticas.
+  **o L1 (Redis):** Respuesta instantánea para consultas idénticas.
 
-      **o L2 (Semantic Cache - ChromaDB):** Identifica intenciones similares conceptualmente, logrando un ahorro de hasta el 70% en tokens.
+  **o L2 (Semantic Cache - ChromaDB):** Identifica intenciones similares conceptualmente, logrando un ahorro de hasta el 70% en tokens.
 
-    **Persistencia de Estado:** Implementación de Checkpointers para mantener el contexto de la conversación (thread_id) a través de múltiples sesiones y contenedores.
+**Persistencia de Estado:** Implementación de Checkpointers para mantener el contexto de la conversación (thread_id) a través de múltiples sesiones y contenedores.
 
 3. 🐳 Capa de Infraestructura y Escalabilidad (MLOps)
 
