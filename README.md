@@ -118,7 +118,7 @@ Garantiza que la IA sea un activo seguro y auditable:
 
 **Audit Logging:** Registro exhaustivo de la cadena de pensamiento y ejecución en app.log para trazabilidad forense y técnica.
 
-###💰 5. Capa de FinOps (Control Financiero)
+### 💰 5. Capa de FinOps (Control Financiero)
 
 Optimización del coste operativo en tiempo real:
 
@@ -128,7 +128,7 @@ Optimización del coste operativo en tiempo real:
 
 **Inferencia Elástica:** Sistema de fallback automático que conmuta entre modelos para optimizar cuotas y presupuestos.
 
-###🎨 6. Interfaz de Usuario (Control Plane)
+### 🎨 6. Interfaz de Usuario (Control Plane)
 
 Experiencia de usuario de alta fidelidad diseñada para la toma de decisiones:
 
