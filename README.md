@@ -90,34 +90,53 @@ El control central asegura la coherencia y eficiencia de la plataforma:
 
 **Caché Híbrida Multinivel:**
 
-	  **o L1 (Redis):** Respuesta instantánea para consultas idénticas.
+  **o L1 (Redis):** Respuesta instantánea para consultas idénticas.
 
-	  **o L2 (Semantic Cache - ChromaDB):** Identifica intenciones similares conceptualmente, logrando un ahorro de hasta el 70% en tokens.
+  **o L2 (Semantic Cache - ChromaDB):** Identifica intenciones similares conceptualmente, logrando un ahorro de hasta el 70% en tokens.
 
 **Persistencia de Estado:** Implementación de Checkpointers para mantener el contexto de la conversación (thread_id) a través de múltiples sesiones y contenedores.
 
-3. 🐳 Capa de Infraestructura y Escalabilidad (MLOps)
+### 3. 🐳 Capa de Infraestructura y Escalabilidad (MLOps)
 
-•	Arquitectura Cloud-Native diseñada para la alta disponibilidad:
-•	Containerización: Todo el ecosistema está inmunizado y estandarizado mediante Docker & Docker Compose.
-•	Nginx Load Balancer: Reverse Proxy que distribuye la carga entre múltiples instancias de la API, garantizando resiliencia.
-•	Procesamiento Asíncrono: Uso de Celery & Redis para delegar tareas pesadas a Workers distribuidos, manteniendo la fluidez de la UI.
-•	Cloudflare Tunnel: Conectividad global segura mediante túneles de capa 7 con cifrado SSL/TLS, sin exposición de puertos vulnerables.
-🛡️ 4. Capa de Seguridad y Gobernanza (UCI Standards)
-•	Garantiza que la IA sea un activo seguro y auditable:
-•	RBAC (Control de Acceso por Roles): Niveles de autoridad (ADMIN, ANALYST, USER) que restringen el acceso a datos sensibles.
-•	HITL (Human-in-the-Loop): Puntos de control donde la IA solicita autorización humana para acciones críticas.
-•	Audit Logging: Registro exhaustivo de la cadena de pensamiento y ejecución en app.log para trazabilidad forense y técnica.
-💰 5. Capa de FinOps (Control Financiero)
-•	Optimización del coste operativo en tiempo real:
-•	Real-Time Token Tracking: Monitorización dinámica del consumo por modelo (Llama-3 70B/8B, Vision, Cohere).
-•	Dashboard de Costos: Visualización del ROI y ahorro generado por la caché semántica.
-•	Inferencia Elástica: Sistema de fallback automático que conmuta entre modelos para optimizar cuotas y presupuestos.
-🎨 6. Interfaz de Usuario (Control Plane)
-•	Experiencia de usuario de alta fidelidad diseñada para la toma de decisiones:
-•	Streamlit UI: Diseño de alto contraste "UCI Style", optimizado para la legibilidad técnica.
-•	Visualización Dinámica: Gráficos interactivos mediante Plotly.
-•	Thought Trace: Animación en tiempo real que visibiliza el proceso cognitivo de la IA (Consultando, Validando, Sintetizando...).
+Arquitectura Cloud-Native diseñada para la alta disponibilidad:
+
+**Containerización:** Todo el ecosistema está inmunizado y estandarizado mediante Docker & Docker Compose.
+
+**Nginx Load Balancer:** Reverse Proxy que distribuye la carga entre múltiples instancias de la API, garantizando resiliencia.
+
+**Procesamiento Asíncrono:** Uso de Celery & Redis para delegar tareas pesadas a Workers distribuidos, manteniendo la fluidez de la UI.
+
+**Cloudflare Tunnel:** Conectividad global segura mediante túneles de capa 7 con cifrado SSL/TLS, sin exposición de puertos vulnerables.
+
+### 🛡️ 4. Capa de Seguridad y Gobernanza (UCI Standards)
+
+Garantiza que la IA sea un activo seguro y auditable:
+
+**RBAC (Control de Acceso por Roles):** Niveles de autoridad (ADMIN, ANALYST, USER) que restringen el acceso a datos sensibles.
+
+**HITL (Human-in-the-Loop):** Puntos de control donde la IA solicita autorización humana para acciones críticas.
+
+**Audit Logging:** Registro exhaustivo de la cadena de pensamiento y ejecución en app.log para trazabilidad forense y técnica.
+
+###💰 5. Capa de FinOps (Control Financiero)
+
+Optimización del coste operativo en tiempo real:
+
+**Real-Time Token Tracking:** Monitorización dinámica del consumo por modelo (Llama-3 70B/8B, Vision, Cohere).
+
+**Dashboard de Costos:** Visualización del ROI y ahorro generado por la caché semántica.
+
+**Inferencia Elástica:** Sistema de fallback automático que conmuta entre modelos para optimizar cuotas y presupuestos.
+
+###🎨 6. Interfaz de Usuario (Control Plane)
+
+Experiencia de usuario de alta fidelidad diseñada para la toma de decisiones:
+
+**Streamlit UI:** Diseño de alto contraste "UCI Style", optimizado para la legibilidad técnica.
+
+**Visualización Dinámica:** Gráficos interactivos mediante Plotly.
+
+**Thought Trace:** Animación en tiempo real que visibiliza el proceso cognitivo de la IA (Consultando, Validando, Sintetizando...).
 
 
 
