@@ -56,6 +56,73 @@ La IA en la empresa no puede ser una "caja negra" sin supervisión. UCI implemen
 
 El reto principal fue la Orquestación de la Cadena de Pensamiento (LangGraph). Lograr que un "Agente Maestro" descomponga una orden compleja (ej: "Investiga el precio de la competencia en la web, compáralo con nuestra base de datos SQL y envíame un informe detallado por correo") en sub-tareas precisas, las delegue a los agentes correctos en el orden lógico, y valide la calidad del resultado antes de entregarlo, representó el mayor hito de ingeniería cognitiva del proyecto.
 
+## ⚛️ Plataforma UCI: Arquitectura de Procesos de Negocio
+
+He diseñado y desarrollado una infraestructura de Microservicios de Inteligencia Artificial de grado industrial, capaz de unificar el análisis de datos estructurados (SQL), la recuperación de conocimiento documental (RAG) y la investigación autonóma en tiempo real. La plataforma está cimentada bajo estándares rigurosos de MLOps y FinOps, garantizando un ecosistema escalable, seguro y económicamente sostenible.
+A continuación, se detalla el desglose de la arquitectura organizado por sus seis capas de valor:
+
+**1. 🧠 Capa de Inteligencia: Fuerza Laboral Agéntica**
+
+UCI despliega un equipo de 8 especialistas orquestados para colaborar entre sí, superando la limitación de los chatbots convencionales:
+
+	**📊 SQL Data Expert:** Ejecuta minería de datos compleja en bases relacionales con capacidad de Self-Healing (autocorrección de sintaxis).
+
+	**🧪 Python Analytics (Excel/CSV):** Científico de datos dedicado al procesamiento de archivos, generación de estadísticas, correlaciones y proyecciones.
+
+	**📈 Python Analytics SQL:** Especialista en analítica avanzada sobre DB; calcula métricas de negocio críticas como Pareto, tendencias y segmentación.
+
+	**📄 RAG Documental:** Consultor de alta fidelidad para documentos técnicos (.pdf, .txt) con anclaje de datos para eliminar alucinaciones.
+
+	**👁️ Vision Auditor:** Procesamiento multimodal que analiza imágenes y PDFs para auditar firmas, sellos y estructuras de tablas complejas.
+
+	**🔍 Researcher Agent:** Investigador autónomo que navega la web en tiempo real para extraer inteligencia competitiva y noticias de mercado.
+
+	**⚖️ Reflection Agent:** Auditor de calidad que intercepta, evalúa y refina las respuestas de otros agentes antes de la entrega final.
+
+	**📩 Email Dispatcher:** Automatiza la comunicación ejecutiva generando informes en HTML con gráficos adjuntos vía SMTP.
+
+**2. 🏗️ Capa de Orquestación y Memoria: El Cerebro Maestro**
+
+El control central asegura la coherencia y eficiencia de la plataforma:
+
+    **Agente Maestro (Director):** Un orquestador basado en LangGraph que descompone objetivos complejos en sub-tareas delegadas secuencialmente.
+
+    **Caché Híbrida Multinivel:**
+
+      **o L1 (Redis):** Respuesta instantánea para consultas idénticas.
+
+      **o L2 (Semantic Cache - ChromaDB):** Identifica intenciones similares conceptualmente, logrando un ahorro de hasta el 70% en tokens.
+
+    **Persistencia de Estado:** Implementación de Checkpointers para mantener el contexto de la conversación (thread_id) a través de múltiples sesiones y contenedores.
+
+3. 🐳 Capa de Infraestructura y Escalabilidad (MLOps)
+
+•	Arquitectura Cloud-Native diseñada para la alta disponibilidad:
+•	Containerización: Todo el ecosistema está inmunizado y estandarizado mediante Docker & Docker Compose.
+•	Nginx Load Balancer: Reverse Proxy que distribuye la carga entre múltiples instancias de la API, garantizando resiliencia.
+•	Procesamiento Asíncrono: Uso de Celery & Redis para delegar tareas pesadas a Workers distribuidos, manteniendo la fluidez de la UI.
+•	Cloudflare Tunnel: Conectividad global segura mediante túneles de capa 7 con cifrado SSL/TLS, sin exposición de puertos vulnerables.
+🛡️ 4. Capa de Seguridad y Gobernanza (UCI Standards)
+•	Garantiza que la IA sea un activo seguro y auditable:
+•	RBAC (Control de Acceso por Roles): Niveles de autoridad (ADMIN, ANALYST, USER) que restringen el acceso a datos sensibles.
+•	HITL (Human-in-the-Loop): Puntos de control donde la IA solicita autorización humana para acciones críticas.
+•	Audit Logging: Registro exhaustivo de la cadena de pensamiento y ejecución en app.log para trazabilidad forense y técnica.
+💰 5. Capa de FinOps (Control Financiero)
+•	Optimización del coste operativo en tiempo real:
+•	Real-Time Token Tracking: Monitorización dinámica del consumo por modelo (Llama-3 70B/8B, Vision, Cohere).
+•	Dashboard de Costos: Visualización del ROI y ahorro generado por la caché semántica.
+•	Inferencia Elástica: Sistema de fallback automático que conmuta entre modelos para optimizar cuotas y presupuestos.
+🎨 6. Interfaz de Usuario (Control Plane)
+•	Experiencia de usuario de alta fidelidad diseñada para la toma de decisiones:
+•	Streamlit UI: Diseño de alto contraste "UCI Style", optimizado para la legibilidad técnica.
+•	Visualización Dinámica: Gráficos interactivos mediante Plotly.
+•	Thought Trace: Animación en tiempo real que visibiliza el proceso cognitivo de la IA (Consultando, Validando, Sintetizando...).
+
+
+
+
+
+
 ## Microservicios
 ![MICROSERVICIOS](./imagenes/2_Microservicios.png)
 
