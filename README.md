@@ -65,21 +65,21 @@ A continuación, se detalla el desglose de la arquitectura organizado por sus se
 
 UCI despliega un equipo de 8 especialistas orquestados para colaborar entre sí, superando la limitación de los chatbots convencionales:
 
-	**📊 SQL Data Expert:** Ejecuta minería de datos compleja en bases relacionales con capacidad de Self-Healing (autocorrección de sintaxis).
+**📊 SQL Data Expert:** Ejecuta minería de datos compleja en bases relacionales con capacidad de Self-Healing (autocorrección de sintaxis).
 
-	**🧪 Python Analytics (Excel/CSV):** Científico de datos dedicado al procesamiento de archivos, generación de estadísticas, correlaciones y proyecciones.
+**🧪 Python Analytics (Excel/CSV):** Científico de datos dedicado al procesamiento de archivos, generación de estadísticas, correlaciones y proyecciones.
 
-	**📈 Python Analytics SQL:** Especialista en analítica avanzada sobre DB; calcula métricas de negocio críticas como Pareto, tendencias y segmentación.
+**📈 Python Analytics SQL:** Especialista en analítica avanzada sobre DB; calcula métricas de negocio críticas como Pareto, tendencias y segmentación.
 
-	**📄 RAG Documental:** Consultor de alta fidelidad para documentos técnicos (.pdf, .txt) con anclaje de datos para eliminar alucinaciones.
+**📄 RAG Documental:** Consultor de alta fidelidad para documentos técnicos (.pdf, .txt) con anclaje de datos para eliminar alucinaciones.
 
-	**👁️ Vision Auditor:** Procesamiento multimodal que analiza imágenes y PDFs para auditar firmas, sellos y estructuras de tablas complejas.
+**👁️ Vision Auditor:** Procesamiento multimodal que analiza imágenes y PDFs para auditar firmas, sellos y estructuras de tablas complejas.
 
-	**🔍 Researcher Agent:** Investigador autónomo que navega la web en tiempo real para extraer inteligencia competitiva y noticias de mercado.
+**🔍 Researcher Agent:** Investigador autónomo que navega la web en tiempo real para extraer inteligencia competitiva y noticias de mercado.
 
-	**⚖️ Reflection Agent:** Auditor de calidad que intercepta, evalúa y refina las respuestas de otros agentes antes de la entrega final.
+**⚖️ Reflection Agent:** Auditor de calidad que intercepta, evalúa y refina las respuestas de otros agentes antes de la entrega final.
 
-	**📩 Email Dispatcher:** Automatiza la comunicación ejecutiva generando informes en HTML con gráficos adjuntos vía SMTP.
+**📩 Email Dispatcher:** Automatiza la comunicación ejecutiva generando informes en HTML con gráficos adjuntos vía SMTP.
 
 **2. 🏗️ Capa de Orquestación y Memoria: El Cerebro Maestro**
 
