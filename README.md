@@ -138,19 +138,58 @@ Experiencia de usuario de alta fidelidad diseñada para la toma de decisiones:
 
 **Thought Trace:** Animación en tiempo real que visibiliza el proceso cognitivo de la IA (Consultando, Validando, Sintetizando...).
 
+### 💼 Resumen:
+
+La Plataforma UCI valida mi capacidad técnica para:
+
+**1. Diseñar Arquitecturas Distribuidas:** Integración de APIs, Workers asíncronos y bases de datos heterogéneas.
+
+**2. Gestionar el Ciclo de Vida del Dato:** Desde la ingesta en bases vectoriales hasta la analítica avanzada.
+
+**3. Implementar Gobernanza de IA:** Sistemas seguros, auditados y económicamente eficientes (FinOps).
+
+**4. Desplegar en Entornos de Producción:** Dominio de Docker, Nginx, seguridad perimetral y escalabilidad horizontal.
+
+**Link YouTube:** https://www.youtube.com/watch?v=K0vbFtAXNvA&t=3s
 
 
+## 🏗️ Pilares de la Arquitectura
+
+**Orquestación Jerárquica de Agentes:** Implementación de un Agente Supervisor (Director) basado en LangGraph que realiza un enrutamiento inteligente de intenciones (Intent Routing). El sistema descompone consultas complejas en sub-tareas ejecutadas por especialistas aislados (SQL, Python, RAG, Vision, Researcher).
+
+**Infraestructura Distribuida y Escalable:** Arquitectura desacoplada utilizando FastAPI como Gateway, Nginx para el balanceo de carga de Capa 7, y un clúster de Workers de Celery para el procesamiento asíncrono. El sistema está completamente contenedorizado con Docker, permitiendo el escalado horizontal independiente de cada motor.
+
+**Persistencia Híbrida y Memoria Semántica:** Estrategia de caché en dos niveles: L1 (Redis) para coincidencias exactas y L2 (ChromaDB) para caché semántica. Esto permite identificar intenciones equivalentes mediante proximidad vectorial, reduciendo el consumo de tokens en un 70% y minimizando la latencia.
+
+**Gobernanza y Seguridad (RBAC):** Sistema de Control de Acceso Basado en Roles integrado en la lógica de los agentes. La plataforma es "consciente de la seguridad", filtrando el acceso a fuentes de datos sensibles según el perfil del usuario (ADMIN, ANALYST, USER) y gestionando acciones críticas mediante flujos Human-in-the-Loop (HITL).
+
+**Monitoreo y FinOps:** Capa de observabilidad financiera en tiempo real que rastrea el consumo de tokens y el coste por consulta. Incluye una estrategia de Inferencia Elástica (Fallback) que conmuta entre modelos de alta capacidad (70B) y modelos ligeros (8B) según la disponibilidad de cuotas y presupuesto.
+
+![ARQUITECTURA](./imagenes/4_Arquitectura.png)
+
+## 🛠️ Stack Tecnológico Principal
+
+**Frameworks:** FastAPI, Streamlit, LangGraph, Pydantic V2.
+
+**Modelos (LLMs):** Llama-3.3 (70B), Llama-3.1 (8B), Llama-3.2 Vision, Cohere Aya-32B.
+
+**Bases de Datos:** ChromaDB (Vectorial), Redis (KV/Broker), SQLite (Relacional).
+
+**Infraestructura:** Docker Compose, Nginx, Celery, Cloudflare Tunnels.
 
 
+## 🌐 Microservicios
 
-## Microservicios
+El núcleo de la Plataforma UCI está orquestado mediante una arquitectura de microservicios desarrollada en FastAPI, aprovechando las capacidades de programación asíncrona (async/await) de Python. Esta infraestructura permite gestionar múltiples peticiones concurrentes a modelos de IA pesados sin bloquear el flujo principal de datos. La implementación utiliza Pydantic para una validación de datos rigurosa y OpenAPI para una documentación técnica automática, garantizando un contrato de API robusto y escalable para entornos de producción industrial.
+
 ![MICROSERVICIOS](./imagenes/2_Microservicios.png)
 
 ## Dockers
+
+La Plataforma UCI ha sido íntegramente contenedorizada utilizando Docker, garantizando la inmutabilidad del entorno y eliminando el conflicto de dependencias entre los diversos agentes. He diseñado una arquitectura multi-contenedor orquestada mediante Docker Compose, que permite levantar de forma simultánea y coordinada el ecosistema completo: el backend de FastAPI, los workers asíncronos de Celery, los brokers de Redis y las bases de datos vectoriales. Este enfoque asegura una reproducibilidad del 100%, permitiendo que la plataforma sea desplegada en cualquier infraestructura (Local, On-Premise o Cloud) con un solo comando.
+
 ![DOCKER](./imagenes/3_Docker.png)
 
-## Arquitectura
-![ARQUITECTURA](./imagenes/4_Arquitectura.png)
 
 ## Interfaz General
 ![PROTOTIPO1](./imagenes/1_Prototipo_General.png)
