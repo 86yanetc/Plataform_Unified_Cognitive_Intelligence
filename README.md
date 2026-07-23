@@ -90,9 +90,9 @@ El control central asegura la coherencia y eficiencia de la plataforma:
 
 **Caché Híbrida Multinivel:**
 
-  **o L1 (Redis):** Respuesta instantánea para consultas idénticas.
+	  **o L1 (Redis):** Respuesta instantánea para consultas idénticas.
 
-  **o L2 (Semantic Cache - ChromaDB):** Identifica intenciones similares conceptualmente, logrando un ahorro de hasta el 70% en tokens.
+	  **o L2 (Semantic Cache - ChromaDB):** Identifica intenciones similares conceptualmente, logrando un ahorro de hasta el 70% en tokens.
 
 **Persistencia de Estado:** Implementación de Checkpointers para mantener el contexto de la conversación (thread_id) a través de múltiples sesiones y contenedores.
 
