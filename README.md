@@ -12,6 +12,8 @@ Para conocer los detalles de arquitectura, desafíos técnicos superados y compa
 
 👉 [**Descargar Informe Técnico Completo (PDF)**](./documentos/Informe_Tecnico_Final.pdf)
 
+👉 [**Ver Video Demo**](https://www.youtube.com/watch?v=K0vbFtAXNvA&t=5s)
+
 *Nota: Este repositorio es un portafolio de arquitectura y diseño de sistemas de IA. El código fuente es de propiedad privada de la autora.*
 
 ## 🧠 Visión Arquitectónica
