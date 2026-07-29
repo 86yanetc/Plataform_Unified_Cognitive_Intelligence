@@ -1,7 +1,6 @@
 <h1 align="center">⚛️ Plataforma UCI: Unified Cognitive Intelligence</h1>
-
 <p align="center">
-  <b>"La orquestación definitiva: Donde la autonomía agéntica y la inteligencia multimodal convergen en un ecosistema de grado empresarial."</b>
+  <img src="./imagenes/portada.png" width="800"><br>
 </p>
 
 **Desarrollado por: Msc. Yanet Cesaire Velazquez**
@@ -249,7 +248,7 @@ Se diseñó una interfaz operativa utilizando Streamlit, enfocada en la eficienc
 ## Agente Vision 
 ![Factura](./imagenes/10_Agente_Vision.png)
 <p align="center">
-  <i><b>Figura 10: </b>Factura usada en el agente visión.</i>
+  <i><b>Figura 10: </b>Factura usada en el agente visión (factura.jpg).</i>
 </p>
 
 ![Agente_Vision](./imagenes/11a_Agente_Vision.png)
