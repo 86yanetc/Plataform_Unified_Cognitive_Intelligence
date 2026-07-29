@@ -169,7 +169,7 @@ La Plataforma UCI valida mi capacidad técnica para:
 
 ![ARQUITECTURA](./imagenes/4_Arquitectura.png)
 <p align="center">
-  <i><b>Figura 1:</b>Arquitectura General.</i>
+  <i><b>Figura 1: </b>Arquitectura General.</i>
 </p>
 
 ## 🛠️ Stack Tecnológico Principal
@@ -188,52 +188,107 @@ La Plataforma UCI valida mi capacidad técnica para:
 El núcleo de la Plataforma UCI está orquestado mediante una arquitectura de microservicios desarrollada en FastAPI, aprovechando las capacidades de programación asíncrona (async/await) de Python. Esta infraestructura permite gestionar múltiples peticiones concurrentes a modelos de IA pesados sin bloquear el flujo principal de datos. La implementación utiliza Pydantic para una validación de datos rigurosa y OpenAPI para una documentación técnica automática, garantizando un contrato de API robusto y escalable para entornos de producción industrial.
 
 ![MICROSERVICIOS](./imagenes/2_Microservicios.png)
+<p align="center">
+  <i><b>Figura 2: </b>Microservicios.</i>
+</p>
 
 ## Dockers
 
 La Plataforma UCI ha sido íntegramente contenedorizada utilizando Docker, garantizando la inmutabilidad del entorno y eliminando el conflicto de dependencias entre los diversos agentes. He diseñado una arquitectura multi-contenedor orquestada mediante Docker Compose, que permite levantar de forma simultánea y coordinada el ecosistema completo: el backend de FastAPI, los workers asíncronos de Celery, los brokers de Redis y las bases de datos vectoriales. Este enfoque asegura una reproducibilidad del 100%, permitiendo que la plataforma sea desplegada en cualquier infraestructura (Local, On-Premise o Cloud) con un solo comando.
 
 ![DOCKER](./imagenes/3_Docker.png)
-
+<p align="center">
+  <i><b>Figura 3: </b>Docker.</i>
+</p>
 
 ## Interfaz General
 ![PROTOTIPO1](./imagenes/1_Prototipo_General.png)
+<p align="center">
+  <i><b>Figura 4: </b>Interfaz General.</i>
+</p>
 
 ## Agente RAG Documental
 ![PROTOTIPO2](./imagenes/5_RAG_Documental.png)
+<p align="center">
+  <i><b>Figura 5: </b>RAG Documental.</i>
+</p>
 
 ## Agente Python Analytics (CSV/Excel)
 ![PROTOTIPO3](./imagenes/6_Agente_Python_Analytics.png)
+<p align="center">
+  <i><b>Figura 6: </b>Agente Python Analytics(CSV/Excel).</i>
+</p>
 
 ## Agente Python Analytics SQL
 ![PROTOTIPO4](./imagenes/7_Agente_Python_Analytics_SQL.png)
+<p align="center">
+  <i><b>Figura 7: </b>Agente Python Analytics.</i>
+</p>
 
 ## Agente SQL Specialist (DB)
 ![PROTOTIPO5](./imagenes/8_Agente_SQL_Specialist_DB.png)
+<p align="center">
+  <i><b>Figura 8: </b>Agente SQL Specialist DB.</i>
+</p>
 
 ## Agente de Investigación
 ![PROTOTIPO6](./imagenes/9_Agente_Investigacion.png)
+<p align="center">
+  <i><b>Figura 9a: </b>Agente de Investigación.</i>
+</p>
+
 ![PROTOTIPO6](./imagenes/9_Agente_Investigacion1.png)
+<p align="center">
+  <i><b>Figura 9b: </b>Agente de Investigación.</i>
+</p>
 
 ## Agente Vision 
 ![Factura](./imagenes/10_Agente_Vision.png)
+<p align="center">
+  <i><b>Figura 10: </b>Factura usada en el agente visión.</i>
+</p>
 
 ![Agente_Vision](./imagenes/11a_Agente_Vision.png)
+<p align="center">
+  <i><b>Figura 10a: </b>Agente Visión.</i>
+</p>
 
 ![Agente_Vision1](./imagenes/11b_Agente_Vision.png)
+<p align="center">
+  <i><b>Figura 10b: </b>Agente Visión.</i>
+</p>
 
 ## Agente Director
-
 ![Agente_Director](./imagenes/12_Agente_Director.png)
+<p align="center">
+  <i><b>Figura 11: </b>Agente Director.</i>
+</p>
 
 ## Recepción de Correo 
-
 ![Recepcion_Correo](./imagenes/13_Recepcion_Correo.png)
+<p align="center">
+  <i><b>Figura 12: </b>Recepción de Correo.</i>
+</p>
+
 
 ## Agente Director
 
 ![Agente_Director1](./imagenes/14_Agente_Director.png)
+<p align="center">
+  <i><b>Figura 13a: </b>Agente Director.</i>
+</p>
+
 ![Agente_Director2](./imagenes/15_Agente_Director.png)
+<p align="center">
+  <i><b>Figura 13b: </b>Agente Director.</i>
+</p>
 
 ![Agente_Director3](./imagenes/16a_Agente_Director.png)
+<p align="center">
+  <i><b>Figura 13c: </b>Agente Director.</i>
+</p>
+
 ![Agente_Director4](./imagenes/16b_Agente_Director.png)
+<p align="center">
+  <i><b>Figura 14c: </b>Agente Director.</i>
+</p>
