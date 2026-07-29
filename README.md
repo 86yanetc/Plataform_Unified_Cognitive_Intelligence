@@ -201,7 +201,7 @@ La Plataforma UCI ha sido íntegramente contenedorizada utilizando Docker, garan
   <i><b>Figura 3: </b>Docker.</i>
 </p>
 
-## 🖥️ Sección: Prototipo de Interfaz (Control Panel)
+## 🖥️ Sección: Prototipo de Interfaz
 
 Se diseñó una interfaz operativa utilizando Streamlit, enfocada en la eficiencia del usuario (UX) y el monitoreo técnico en tiempo real. El panel permite al operador alternar entre 10 estrategias de IA sin cambiar de entorno, centralizando el comando de la infraestructura urbana.
 
