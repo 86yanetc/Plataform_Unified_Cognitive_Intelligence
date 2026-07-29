@@ -168,6 +168,9 @@ La Plataforma UCI valida mi capacidad técnica para:
 **Monitoreo y FinOps:** Capa de observabilidad financiera en tiempo real que rastrea el consumo de tokens y el coste por consulta. Incluye una estrategia de Inferencia Elástica (Fallback) que conmuta entre modelos de alta capacidad (70B) y modelos ligeros (8B) según la disponibilidad de cuotas y presupuesto.
 
 ![ARQUITECTURA](./imagenes/4_Arquitectura.png)
+<p align="center">
+  <i><b>Figura 1:</b>Arquitectura General.</i>
+</p>
 
 ## 🛠️ Stack Tecnológico Principal
 
